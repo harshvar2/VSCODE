@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - My_Calculation",
+            "request": "launch",
+            "mainClass": "My_Calculation",
+            "projectName": "Java_19dbbf9c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - hey",
+            "request": "launch",
+            "mainClass": "hey",
+            "projectName": "Java_19dbbf9c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - cal",
+            "request": "launch",
+            "mainClass": "cal",
+            "projectName": "Java_19dbbf9c"
+        }
+    ]
+}
