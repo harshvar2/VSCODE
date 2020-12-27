@@ -126,9 +126,9 @@ public class bst {
             //getting the inorder successor
             Node successor=getsucc(root);
             root.key=successor.key;
-            root.right=deleted(root.right,successor.key);
+            root.right=delNode(root.right,successor.key);
         }
-        
+        return root;
     }
     Node getsucc(Node root){
 
@@ -165,7 +165,7 @@ public class bst {
             {
                 root=root.right;
             }
-            else{ res=root;
+            else{
                 root=root.left;
                 
             }
