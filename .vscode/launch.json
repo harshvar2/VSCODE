@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LList",
+            "request": "launch",
+            "mainClass": "LinkedList.LList",
+            "projectName": "VSCODE_9a808e22"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - test",
             "request": "launch",
             "mainClass": "test",

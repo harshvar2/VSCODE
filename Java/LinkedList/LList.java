@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-public class LinkedList {
+public class LList {
     public static void main(String[] args) {
         Node n1 = new Node(10);
         Node n2 = new Node(20);
@@ -37,6 +37,14 @@ public class LinkedList {
         // delete an element from linked list
         delete(head, 2);
         curr = head;
+        while (curr != null) {
+            System.out.println(curr.data);
+            curr = curr.next;
+        }
+        System.err.println("Reversing a linked list" + "\n");
+        // reverse a linked list
+        reverse(head);
+        curr = n3;
         while (curr != null) {
             System.out.println(curr.data);
             curr = curr.next;
@@ -74,5 +82,17 @@ public class LinkedList {
         }
         //  In java, if there is no reference to a node in linked list, garbage collector will take it off.
         prev.next=prev.next.next;
+    }
+
+    static void reverse(Node head){
+        Node prev=null;
+        Node curr=head;
+        Node next=null;
+        while (curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
     }
 }
